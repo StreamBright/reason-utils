@@ -1,0 +1,16 @@
+opam-version: "2.0"
+name: "reasonutils"
+version: "1.0.0"
+maintainer: "Istvan Szukacs <istvan@streambrightdata.com>"
+authors: ["Istvan Szukacs <istvan@streambrightdata.com>"]
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+license: ["ISC"]
+tags: []
+build: [["jbuilder" "build" "-p" name "-j" jobs]]
+build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
+depends: [
+  "jbuilder" {build}
+  "reason" {>= "2.0.0"} {build}
+]
